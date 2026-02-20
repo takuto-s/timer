@@ -108,13 +108,15 @@ function renderFloorMap() {
         statusEl.textContent = stateObj ? stateObj.label : "";
         cell.appendChild(statusEl);
 
-        // 食事中の場合、フード/ドリンク情報を表示
+        // 食事中の場合、フード/ドリンク情報 + 残り時間を表示
         if (table.state === "eating") {
           const infoEl = document.createElement("div");
           infoEl.className = "table-info";
           const foodLabel = table.food === "unlimited" ? "F:放題" : "F:単品";
           const drinkLabel = table.drink === "unlimited" ? "D:放題" : "D:単品";
-          infoEl.innerHTML = `${foodLabel}<br>${drinkLabel}`;
+          const remainMs = table.loTime ? table.loTime - Date.now() : 0;
+          const remainMin = Math.max(0, Math.ceil(remainMs / 60000));
+          infoEl.innerHTML = `${foodLabel} ${drinkLabel}<br>残${remainMin}分`;
           cell.appendChild(infoEl);
         }
 
