@@ -49,13 +49,14 @@ body {
 }
 
 .table-cell .table-status {
-  font-size: 16px;
+  font-size: 19px;
   text-align: center;
   line-height: 1.1;
+  white-space: pre-line;
 }
 
 .table-cell .table-info {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
   line-height: 1.1;
 }
