@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>卓管理</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="floor-map"></div>
+      <div id="lo-list">
+        <h2>LO時間</h2>
+        <div id="current-time"></div>
+        <div id="lo-items"></div>
+      </div>
+    </div>
+
+    <div id="modal-overlay" class="hidden">
+      <div id="modal">
+        <h3 id="modal-title"></h3>
+        <div class="modal-section">
+          <label>フード:</label>
+          <div class="modal-buttons">
+            <button data-type="food" data-value="unlimited">食べ放題</button>
+            <button data-type="food" data-value="single">単品</button>
+          </div>
+        </div>
+        <div class="modal-section">
+          <label>ドリンク:</label>
+          <div class="modal-buttons">
+            <button data-type="drink" data-value="unlimited">飲み放題</button>
+            <button data-type="drink" data-value="single">単品</button>
+          </div>
+        </div>
+        <button id="modal-confirm" disabled>決定</button>
+        <button id="modal-cancel">キャンセル</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
