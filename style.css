@@ -19,8 +19,8 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  gap: 4px;
-  padding: 8px;
+  gap: 6px;
+  padding: 10px;
 }
 
 .table-cell {
@@ -44,18 +44,20 @@ body {
   position: absolute;
   top: 2px;
   left: 4px;
-  font-size: 10px;
+  font-size: 9px;
   color: #555;
 }
 
 .table-cell .table-status {
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
+  line-height: 1.1;
 }
 
 .table-cell .table-info {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
+  line-height: 1.2;
 }
 
 .empty-cell {
@@ -87,20 +89,20 @@ body {
 
 /* LOリスト */
 #lo-list {
-  width: 220px;
+  width: 200px;
   border-left: 2px solid #333;
   padding: 8px;
   overflow-y: auto;
 }
 
 #lo-list h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 4px;
   text-align: center;
 }
 
 #current-time {
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -110,7 +112,7 @@ body {
   justify-content: space-between;
   padding: 6px 4px;
   border-bottom: 1px solid #ccc;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .lo-item .lo-table {

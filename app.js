@@ -114,7 +114,7 @@ function renderFloorMap() {
           infoEl.className = "table-info";
           const foodLabel = table.food === "unlimited" ? "F:放題" : "F:単品";
           const drinkLabel = table.drink === "unlimited" ? "D:放題" : "D:単品";
-          infoEl.textContent = `${foodLabel} ${drinkLabel}`;
+          infoEl.innerHTML = `${foodLabel}<br>${drinkLabel}`;
           cell.appendChild(infoEl);
         }
 
